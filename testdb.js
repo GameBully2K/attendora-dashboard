@@ -1,9 +1,9 @@
 'use strict';
 require('dotenv').config();
+const { env } = require('process');
 
 const fs = require('fs');
 const mysql = require('mysql2');
-const { env } = require('process');
 const bcrypt = require('bcrypt');
 
 const conn = mysql.createConnection({
